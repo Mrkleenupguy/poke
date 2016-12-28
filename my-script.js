@@ -5,7 +5,7 @@ $("#my-button").click(function(){
     method: "GET",
     url: myUrl,
     success: function(data){
-      console.log(data);
+      $("#poke-name").html();
     }
   });
 });
