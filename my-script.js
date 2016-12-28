@@ -6,7 +6,7 @@ $("#my-button").click(function(){
     url: myUrl,
     success: function(data){
       $("#poke-name").html(data.name);
-      $("#poke-image").src = data.sprites.front_default;
+      $("#poke-image").attr("src", data.sprites.front_default);
     }
   });
 });
